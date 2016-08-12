@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;    
+}
+html, body {
+    /*background-color: black;*/
+    background: url('drums.png') no-repeat center center;
+    background-size: contain;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /*background-size: cover;*/
+}
+
+#playboard {
+  display: flex;
+}
+.top-row{
+    flex-direction: row;
+}
+.top-row div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-row div button{
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    justify-content: space-around;
+}
+
+.bottom-row{
+
+}
+
+div{
+
+    flex-direction: column;
+}
