@@ -1,41 +1,255 @@
+
+
 *{
-    box-sizing: border-box;    
+    /*box-sizing: border-box;*/
+    cursor: url(http://www.cursor.cc/cursor/885/52/cursor.png), pointer !important;    
 }
 html, body {
-    /*background-color: black;*/
-    background: url('drums.png') no-repeat center center;
-    background-size: contain;
+    background-color: #000;
+
+}
+
+.container {
     position: relative;
-    height: 100%;
-    width: 100%;
-    /*background-size: cover;*/
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
 }
 
-#playboard {
-  display: flex;
-}
-.top-row{
-    flex-direction: row;
-}
-.top-row div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.playboard {
+    max-width: 100%;
+    height: auto;
+    
 }
 
-.top-row div button{
+.record button {
+    color: steelblue;
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.sounds button {
+    color: steelblue;
+    font-family: 'Roboto Condensed';
+    font-size: 40px;
+    background-color: transparent;
+    border: none; 
+    outline: none;
+    
+}
+
+.record {
+    left: 12%;
+    top: 2%;
+    position: absolute;
+}
+
+.sounds {
+    right: 12%;
+    top: 2%;
+    position: absolute;
+}
+
+.audio {
     border: 3px solid black;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    justify-content: space-around;
-}
-
-.bottom-row{
+    outline: none;
 
 }
 
-div{
-
-    flex-direction: column;
+.hit {
+    position: absolute;
+    
 }
+
+.hihathit {
+    left: 23%;
+    top: 39%;
+       
+}
+
+.snarehit {
+    left: 19%;
+    top: 72%;
+      
+}
+
+.crashhit {
+    left: 37%;
+    top: 25%;
+      
+}
+
+.ridehit {
+   left: 74%;
+    top: 41%;
+     
+}
+
+.kickhit {
+    left: 0;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+}
+
+.tomonehit{
+    left: 37%;
+    top: 49%;
+    
+}
+
+.tomtwohit{
+    left: 58%;
+    top: 49%;
+    
+}
+
+.floortomhit {
+    left: 76%;
+    top: 72%;
+      
+}
+
+.cowbell {
+   left: 58%;
+    top: 24%;
+      
+}
+
+
+
+button:hover{
+    cursor: url(http://www.cursor.cc/cursor/885/52/cursor.png), pointer !important;    
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    background-color:transparent;
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s;
+}
+
+.sidenavone {
+    left: 0;
+}
+
+.sidenavtwo {
+    right: 0;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color:steelblue;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav li {
+    padding: 8px 8px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color:steelblue;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav li button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif';
+}
+
+.sidenavone li button {
+    padding-left: 0;
+}
+
+.sidenavtwo li button {
+    padding-right: 0;
+    margin-left: 55px;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: white;
+    
+}
+
+.sidenav li:hover, .offcanvas li:focus{
+    color:white;
+    
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    font-size: 36px;
+}
+
+.sidenavone .closebtn {
+    top: 0;
+    left: 0;
+}
+
+.sidenavtwo .closebtn {
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+    
+/*.playboard {
+    background: url('drums.png') center center;
+    background-size: cover;
+    height: 7px;
+    position: absolute;
+    width: 100%;
+}*/
+   
+
+/*
+.row, .center-row{
+  display: inline-block;
+  
+  width: 33%;
+}
+
+.center-row div{
+    
+}
+
+.row div{
+    display: inline-block;
+    
+    
+}
+
+.row div button, .center-row div button{
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 37%;
+    left: 39%;
+}*/
